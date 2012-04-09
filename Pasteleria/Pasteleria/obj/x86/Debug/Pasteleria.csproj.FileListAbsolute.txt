@@ -1,0 +1,16 @@
+C:\Users\OLGA\Desktop\Pasteleria\Pasteleria\bin\Debug\Pasteleria.exe
+C:\Users\OLGA\Desktop\Pasteleria\Pasteleria\bin\Debug\Pasteleria.pdb
+C:\Users\OLGA\Desktop\Pasteleria\Pasteleria\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\OLGA\Desktop\Pasteleria\Pasteleria\obj\x86\Debug\Pasteleria.Properties.Resources.resources
+C:\Users\OLGA\Desktop\Pasteleria\Pasteleria\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\OLGA\Desktop\Pasteleria\Pasteleria\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\OLGA\Desktop\Pasteleria\Pasteleria\obj\x86\Debug\Pasteleria.exe
+C:\Users\OLGA\Desktop\Pasteleria\Pasteleria\obj\x86\Debug\Pasteleria.pdb
+C:\Users\OLGA\Desktop\Pasteleria\Pasteleria\obj\x86\Debug\Pasteleria.LoginForm.resources
+C:\Users\OLGA\Desktop\Pasteleria\Pasteleria\bin\Debug\Pasteleria.exe.config
+C:\Users\OLGA\Desktop\Pasteleria\Pasteleria\bin\Debug\CapaComunes.dll
+C:\Users\OLGA\Desktop\Pasteleria\Pasteleria\bin\Debug\CapaNegocios.dll
+C:\Users\OLGA\Desktop\Pasteleria\Pasteleria\bin\Debug\CapaDatos.dll
+C:\Users\OLGA\Desktop\Pasteleria\Pasteleria\bin\Debug\CapaComunes.pdb
+C:\Users\OLGA\Desktop\Pasteleria\Pasteleria\bin\Debug\CapaNegocios.pdb
+C:\Users\OLGA\Desktop\Pasteleria\Pasteleria\bin\Debug\CapaDatos.pdb

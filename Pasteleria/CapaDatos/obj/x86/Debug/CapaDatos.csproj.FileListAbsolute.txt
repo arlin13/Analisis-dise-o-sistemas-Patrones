@@ -1,0 +1,7 @@
+C:\Users\OLGA\Desktop\Pasteleria\CapaDatos\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\OLGA\Desktop\Pasteleria\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\OLGA\Desktop\Pasteleria\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\OLGA\Desktop\Pasteleria\CapaDatos\bin\Debug\CapaComunes.dll
+C:\Users\OLGA\Desktop\Pasteleria\CapaDatos\bin\Debug\CapaComunes.pdb
+C:\Users\OLGA\Desktop\Pasteleria\CapaDatos\obj\x86\Debug\CapaDatos.dll
+C:\Users\OLGA\Desktop\Pasteleria\CapaDatos\obj\x86\Debug\CapaDatos.pdb

@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaPresentacion", "Pasteleria\CapaPresentacion.csproj", "{BC3E4B40-6827-4062-AB53-8A2A827B3EE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaComunes", "CapaComunes\CapaComunes.csproj", "{26785D7C-931A-49F4-9D35-3D0A02C1B8E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaDatos", "CapaDatos\CapaDatos.csproj", "{A297B31A-DCC9-4D95-8483-FD34454A5F55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaNegocios", "CapaNegocios\CapaNegocios.csproj", "{3B71DEB8-6339-4935-B421-39ECA361469C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC3E4B40-6827-4062-AB53-8A2A827B3EE3}.Debug|x86.ActiveCfg = Debug|x86
+		{BC3E4B40-6827-4062-AB53-8A2A827B3EE3}.Debug|x86.Build.0 = Debug|x86
+		{BC3E4B40-6827-4062-AB53-8A2A827B3EE3}.Release|x86.ActiveCfg = Release|x86
+		{BC3E4B40-6827-4062-AB53-8A2A827B3EE3}.Release|x86.Build.0 = Release|x86
+		{26785D7C-931A-49F4-9D35-3D0A02C1B8E3}.Debug|x86.ActiveCfg = Debug|x86
+		{26785D7C-931A-49F4-9D35-3D0A02C1B8E3}.Debug|x86.Build.0 = Debug|x86
+		{26785D7C-931A-49F4-9D35-3D0A02C1B8E3}.Release|x86.ActiveCfg = Release|x86
+		{26785D7C-931A-49F4-9D35-3D0A02C1B8E3}.Release|x86.Build.0 = Release|x86
+		{A297B31A-DCC9-4D95-8483-FD34454A5F55}.Debug|x86.ActiveCfg = Debug|x86
+		{A297B31A-DCC9-4D95-8483-FD34454A5F55}.Debug|x86.Build.0 = Debug|x86
+		{A297B31A-DCC9-4D95-8483-FD34454A5F55}.Release|x86.ActiveCfg = Release|x86
+		{A297B31A-DCC9-4D95-8483-FD34454A5F55}.Release|x86.Build.0 = Release|x86
+		{3B71DEB8-6339-4935-B421-39ECA361469C}.Debug|x86.ActiveCfg = Debug|x86
+		{3B71DEB8-6339-4935-B421-39ECA361469C}.Debug|x86.Build.0 = Debug|x86
+		{3B71DEB8-6339-4935-B421-39ECA361469C}.Release|x86.ActiveCfg = Release|x86
+		{3B71DEB8-6339-4935-B421-39ECA361469C}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
