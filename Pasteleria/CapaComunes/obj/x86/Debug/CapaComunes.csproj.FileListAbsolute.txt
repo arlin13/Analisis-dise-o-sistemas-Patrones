@@ -3,3 +3,8 @@ C:\Users\OLGA\Desktop\Pasteleria\CapaComunes\bin\Debug\CapaComunes.dll
 C:\Users\OLGA\Desktop\Pasteleria\CapaComunes\bin\Debug\CapaComunes.pdb
 C:\Users\OLGA\Desktop\Pasteleria\CapaComunes\obj\x86\Debug\CapaComunes.dll
 C:\Users\OLGA\Desktop\Pasteleria\CapaComunes\obj\x86\Debug\CapaComunes.pdb
+C:\Users\OLGA\Desktop\Analisis-dise-o-sistemas-Patrones\Pasteleria\CapaComunes\bin\Debug\CapaComunes.dll
+C:\Users\OLGA\Desktop\Analisis-dise-o-sistemas-Patrones\Pasteleria\CapaComunes\bin\Debug\CapaComunes.pdb
+C:\Users\OLGA\Desktop\Analisis-dise-o-sistemas-Patrones\Pasteleria\CapaComunes\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\OLGA\Desktop\Analisis-dise-o-sistemas-Patrones\Pasteleria\CapaComunes\obj\x86\Debug\CapaComunes.dll
+C:\Users\OLGA\Desktop\Analisis-dise-o-sistemas-Patrones\Pasteleria\CapaComunes\obj\x86\Debug\CapaComunes.pdb

@@ -2,7 +2,7 @@
 
 namespace Pasteleria
 {
-    public class PastelDecorator:Pastel
+    public class PastelDecorator : Pastel
     {
         protected Pastel _pastel;
 

@@ -42,6 +42,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NuevaCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevaCuenta.Designer.cs">
+      <DependentUpon>NuevaCuenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pasteles\Component\Pastel.cs" />
     <Compile Include="Pasteles\ConcreteComponent\PastelChico.cs" />
     <Compile Include="Pasteles\ConcreteComponent\PastelGrande.cs" />
@@ -60,6 +72,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevaCuenta.resx">
+      <DependentUpon>NuevaCuenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

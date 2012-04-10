@@ -7,3 +7,12 @@ C:\Users\OLGA\Desktop\Pasteleria\CapaNegocios\bin\Debug\CapaComunes.pdb
 C:\Users\OLGA\Desktop\Pasteleria\CapaNegocios\bin\Debug\CapaDatos.pdb
 C:\Users\OLGA\Desktop\Pasteleria\CapaNegocios\obj\x86\Debug\CapaNegocios.dll
 C:\Users\OLGA\Desktop\Pasteleria\CapaNegocios\obj\x86\Debug\CapaNegocios.pdb
+C:\Users\OLGA\Desktop\Analisis-dise-o-sistemas-Patrones\Pasteleria\CapaNegocios\bin\Debug\CapaNegocios.dll
+C:\Users\OLGA\Desktop\Analisis-dise-o-sistemas-Patrones\Pasteleria\CapaNegocios\bin\Debug\CapaNegocios.pdb
+C:\Users\OLGA\Desktop\Analisis-dise-o-sistemas-Patrones\Pasteleria\CapaNegocios\bin\Debug\CapaComunes.dll
+C:\Users\OLGA\Desktop\Analisis-dise-o-sistemas-Patrones\Pasteleria\CapaNegocios\bin\Debug\CapaDatos.dll
+C:\Users\OLGA\Desktop\Analisis-dise-o-sistemas-Patrones\Pasteleria\CapaNegocios\bin\Debug\CapaComunes.pdb
+C:\Users\OLGA\Desktop\Analisis-dise-o-sistemas-Patrones\Pasteleria\CapaNegocios\bin\Debug\CapaDatos.pdb
+C:\Users\OLGA\Desktop\Analisis-dise-o-sistemas-Patrones\Pasteleria\CapaNegocios\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\OLGA\Desktop\Analisis-dise-o-sistemas-Patrones\Pasteleria\CapaNegocios\obj\x86\Debug\CapaNegocios.dll
+C:\Users\OLGA\Desktop\Analisis-dise-o-sistemas-Patrones\Pasteleria\CapaNegocios\obj\x86\Debug\CapaNegocios.pdb

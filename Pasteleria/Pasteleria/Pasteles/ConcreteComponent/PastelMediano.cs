@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Pasteleria
 {
@@ -9,7 +6,7 @@ namespace Pasteleria
     {
         public PastelMediano()
         {
-            Descripcion = "Pastel mediano";
+            Descripcion = "Pastel de una plancha";
         }
         public override string ObtieneDescripcion()
         {
