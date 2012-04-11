@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 
 namespace Pasteleria
 {
@@ -6,7 +7,10 @@ namespace Pasteleria
     {
         public MainForm()
         {
-           
+            InitializeComponent();
         }
+
+        //private System.Windows.Forms.GroupBox gboxPastel = new System.Windows.Forms.GroupBox();
+        
     }
 }

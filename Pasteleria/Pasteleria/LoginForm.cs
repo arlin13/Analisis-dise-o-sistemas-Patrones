@@ -13,13 +13,13 @@ namespace Pasteleria
 
         private void buttonIniciarSesion_Click(object sender, EventArgs e)
         {
-            MainForm mainForm = new MainForm();
-            mainForm.Show();
-
             Pastel pastelGrande = new PastelGrande();
             pastelGrande = new Fruta(pastelGrande);
             
             MessageBox.Show(pastelGrande.ObtieneDescripcion() + "\n\r" + pastelGrande.CalculaPrecio());
+
+            MainForm mainForm = new MainForm();
+            mainForm.Show();
 
             //Pastel pastelMediano = new PastelMediano();
             //pastelMediano = new Fruta(pastelMediano);
