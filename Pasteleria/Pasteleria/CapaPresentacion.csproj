@@ -42,6 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormaDePago\ConcreteStrategy\Efectivo.cs" />
+    <Compile Include="FormaDePago\ConcreteStrategy\TarjetaBanco.cs" />
+    <Compile Include="FormaDePago\Strategy\FormaDePago.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +111,9 @@
       <Project>{3B71DEB8-6339-4935-B421-39ECA361469C}</Project>
       <Name>CapaNegocios</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FormaDePago\Context\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
