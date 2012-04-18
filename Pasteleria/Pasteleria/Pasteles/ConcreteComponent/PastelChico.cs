@@ -6,7 +6,7 @@ namespace Pasteleria
     {
         public PastelChico()
         {
-            Descripcion = "Pastel de media plancha";
+            Descripcion = "Pastel de media plancha. ";
 
         }
         public override string ObtieneDescripcion()

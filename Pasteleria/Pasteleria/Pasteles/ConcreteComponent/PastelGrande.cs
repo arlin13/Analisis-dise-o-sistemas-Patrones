@@ -6,7 +6,7 @@ namespace Pasteleria
     {
         public PastelGrande()
         {
-            Descripcion = "Pastel de dos planchas";
+            Descripcion = "Pastel de dos planchas. ";
         }
         public override string ObtieneDescripcion()
         {

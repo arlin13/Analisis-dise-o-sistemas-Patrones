@@ -6,8 +6,9 @@ namespace Pasteleria
     {
         public PastelMediano()
         {
-            Descripcion = "Pastel de una plancha";
+            Descripcion = "Pastel de una plancha. ";
         }
+
         public override string ObtieneDescripcion()
         {
             return Descripcion;

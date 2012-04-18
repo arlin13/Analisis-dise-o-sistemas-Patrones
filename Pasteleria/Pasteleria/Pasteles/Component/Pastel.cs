@@ -7,14 +7,7 @@ namespace Pasteleria
         public string Descripcion { get; set; }
         public Sabor Sabor { get; set; }
         public Forma Forma { get; set; }
-
-        //public Pastel(string descripcion, Sabor sabor, Forma forma)
-        //{
-        //    this.Descripcion = descripcion;
-        //    this.Sabor = sabor;
-        //    this.Forma = forma;
-        //}
-
+         
         public abstract string ObtieneDescripcion();
         public abstract double CalculaPrecio();
     }
@@ -23,13 +16,13 @@ namespace Pasteleria
     { 
         Chocolate,
         TresLeches,
-        Vainilla,
-        Zanahoria
+        Vainilla
     }
 
     public enum Forma
     { 
         Circular,
-        Rectangular
+        Cuadrado,
+        Corazon
     }
 }

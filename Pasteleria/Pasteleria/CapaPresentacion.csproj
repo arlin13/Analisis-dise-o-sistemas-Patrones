@@ -42,8 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormaDePago\ConcreteStrategy\Efectivo.cs" />
-    <Compile Include="FormaDePago\ConcreteStrategy\TarjetaBanco.cs" />
+    <Compile Include="Menu\AcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\AcercaDe.Designer.cs">
+      <DependentUpon>AcercaDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Correo.cs" />
+    <Compile Include="FormaDePago\ConcreteStrategy\Cupon.cs" />
+    <Compile Include="FormaDePago\ConcreteStrategy\TarjetaClienteDistinguido.cs" />
+    <Compile Include="FormaDePago\Context\Context.cs" />
     <Compile Include="FormaDePago\Strategy\FormaDePago.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -51,10 +59,16 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="NuevaCuenta.cs">
+    <Compile Include="Menu\Mantenimiento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NuevaCuenta.Designer.cs">
+    <Compile Include="Menu\Mantenimiento.Designer.cs">
+      <DependentUpon>Mantenimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\NuevaCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\NuevaCuenta.Designer.cs">
       <DependentUpon>NuevaCuenta.cs</DependentUpon>
     </Compile>
     <Compile Include="Pasteles\Component\Pastel.cs" />
@@ -65,21 +79,35 @@
     <Compile Include="Pasteles\ConcreteDecorators\Fruta.cs" />
     <Compile Include="Pasteles\ConcreteDecorators\Nieve.cs" />
     <Compile Include="Pasteles\Decorator\PastelDecorator.cs" />
-    <Compile Include="LoginForm.cs">
+    <Compile Include="Login\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm.Designer.cs">
+    <Compile Include="Login\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="LoginForm.resx">
+    <Compile Include="Login\RecordarContraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\RecordarContraseña.Designer.cs">
+      <DependentUpon>RecordarContraseña.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pasteles\ConcreteDecorators\Relleno.cs" />
+    <EmbeddedResource Include="Menu\AcercaDe.resx">
+      <DependentUpon>AcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="NuevaCuenta.resx">
+    <EmbeddedResource Include="Menu\Mantenimiento.resx">
+      <DependentUpon>Mantenimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\NuevaCuenta.resx">
       <DependentUpon>NuevaCuenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -90,7 +118,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Login\RecordarContraseña.resx">
+      <DependentUpon>RecordarContraseña.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="App.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -112,8 +144,57 @@
       <Name>CapaNegocios</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="FormaDePago\Context\" />
+    <None Include="Resources\Ventana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo - copia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NuevaCuenta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pasteles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ingresar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actualizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Borrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CerrarSesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reporte.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mastercard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mastercard1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mastercard2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visa2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\titulocakes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\titulocupcakes.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

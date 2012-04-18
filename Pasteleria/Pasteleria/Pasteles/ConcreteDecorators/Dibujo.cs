@@ -10,12 +10,12 @@ namespace Pasteleria
         public Dibujo(Pastel pastel)
             : base(pastel)
         {
-            Descripcion = "Dibujo personalizado";
+            Descripcion = "Dibujo personalizado. ";
         }
 
         public override string ObtieneDescripcion()
         {
-            return _pastel.ObtieneDescripcion() + " , " + Descripcion;
+            return _pastel.ObtieneDescripcion() + Descripcion;
         }
 
         public override double CalculaPrecio()
