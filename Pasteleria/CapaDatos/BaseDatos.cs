@@ -1,6 +1,6 @@
-﻿using System.Configuration;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
+using System.Configuration;
 using CapaComunes;
 
 namespace CapaDatos
@@ -148,7 +148,7 @@ namespace CapaDatos
             if (_command != null)
             {
                 _command.Parameters.Add(new SqlParameter("@Monto", v.Monto));
-                _command.Parameters.Add(new SqlParameter("@idEmpleado", v.idEmpleado));
+                _command.Parameters.Add(new SqlParameter("@idEmpleado", v.IdEmpleado));
             }
 
             ExecuteQuery();
@@ -167,11 +167,11 @@ namespace CapaDatos
             {
                 empleado = new Empleado()
                 {
-                    idEmpleado = int.Parse(results.Tables[0].Rows[0]["idEmpleado"].ToString())
+                    IdEmpleado = int.Parse(results.Tables[0].Rows[0]["idEmpleado"].ToString())
                 };
             };
 
-            return empleado.idEmpleado;
+            return empleado.IdEmpleado;
         }
         public string ObtenerContrasena(string correo)
         {

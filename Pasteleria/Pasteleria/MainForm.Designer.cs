@@ -139,14 +139,14 @@
             // nuevaVentaToolStripMenuItem
             // 
             this.nuevaVentaToolStripMenuItem.Name = "nuevaVentaToolStripMenuItem";
-            this.nuevaVentaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.nuevaVentaToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.nuevaVentaToolStripMenuItem.Text = "Nueva Venta";
             // 
             // cerrarSesiónToolStripMenuItem1
             // 
             this.cerrarSesiónToolStripMenuItem1.Image = global::Pasteleria.Properties.Resources.CerrarSesion;
             this.cerrarSesiónToolStripMenuItem1.Name = "cerrarSesiónToolStripMenuItem1";
-            this.cerrarSesiónToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.cerrarSesiónToolStripMenuItem1.Size = new System.Drawing.Size(143, 22);
             this.cerrarSesiónToolStripMenuItem1.Text = "&Cerrar Sesión";
             this.cerrarSesiónToolStripMenuItem1.Click += new System.EventHandler(this.cerrarSesiónToolStripMenuItem1_Click);
             // 
@@ -232,11 +232,11 @@
             this.textBoxTotal.Size = new System.Drawing.Size(84, 20);
             this.textBoxTotal.TabIndex = 61;
             // 
-            // lbCompraRealizada
+            // listboxCompraRealizada
             // 
             this.listboxCompraRealizada.FormattingEnabled = true;
             this.listboxCompraRealizada.Location = new System.Drawing.Point(557, 167);
-            this.listboxCompraRealizada.Name = "lbCompraRealizada";
+            this.listboxCompraRealizada.Name = "listboxCompraRealizada";
             this.listboxCompraRealizada.Size = new System.Drawing.Size(449, 173);
             this.listboxCompraRealizada.TabIndex = 60;
             this.listboxCompraRealizada.DoubleClick += new System.EventHandler(this.lbCompraRealizada_DoubleClick);

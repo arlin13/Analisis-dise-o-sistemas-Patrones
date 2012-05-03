@@ -125,3 +125,6 @@ C:\Users\OLGA\Desktop\Pasteleria_cambiosBetty\Pasteleria\obj\x86\Debug\GenerateR
 C:\Users\OLGA\Desktop\Pasteleria_cambiosBetty\Pasteleria\obj\x86\Debug\Pasteleria.exe
 C:\Users\OLGA\Desktop\Pasteleria_cambiosBetty\Pasteleria\obj\x86\Debug\Pasteleria.pdb
 C:\Users\OLGA\Desktop\Pasteleria_cambiosBetty\Pasteleria\obj\x86\Debug\Pasteleria.AcercaDe.resources
+C:\Users\OLGA\Desktop\Analisis-dise-o-sistemas-Patrones\Pasteleria\Pasteleria\obj\x86\Debug\Pasteleria.AcercaDe.resources
+C:\Users\OLGA\Desktop\Analisis-dise-o-sistemas-Patrones\Pasteleria\Pasteleria\obj\x86\Debug\Pasteleria.Mantenimiento.resources
+C:\Users\OLGA\Desktop\Analisis-dise-o-sistemas-Patrones\Pasteleria\Pasteleria\obj\x86\Debug\Pasteleria.RecordarContraseña.resources
