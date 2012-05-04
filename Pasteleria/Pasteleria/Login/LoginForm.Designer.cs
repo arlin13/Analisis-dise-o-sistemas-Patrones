@@ -44,7 +44,6 @@
             // 
             // panelLogo
             // 
-            this.panelLogo.BackgroundImage = global::Pasteleria.Properties.Resources.Logo___copia;
             this.panelLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelLogo.Controls.Add(this.groupBoxLogin);
             this.panelLogo.Controls.Add(this.linkLabelCrearCuenta);

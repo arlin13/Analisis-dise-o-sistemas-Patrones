@@ -1178,7 +1178,6 @@
             // 
             this.radioButtonCupcakeJumbo.Appearance = System.Windows.Forms.Appearance.Button;
             this.radioButtonCupcakeJumbo.AutoSize = true;
-            this.radioButtonCupcakeJumbo.Image = global::Pasteleria.Properties.Resources.cupcakeTamaño1;
             this.radioButtonCupcakeJumbo.Location = new System.Drawing.Point(195, 280);
             this.radioButtonCupcakeJumbo.Name = "radioButtonCupcakeJumbo";
             this.radioButtonCupcakeJumbo.Size = new System.Drawing.Size(70, 68);
@@ -1227,7 +1226,6 @@
             // 
             this.radioButtonCupcakeMediano.Appearance = System.Windows.Forms.Appearance.Button;
             this.radioButtonCupcakeMediano.AutoSize = true;
-            this.radioButtonCupcakeMediano.Image = global::Pasteleria.Properties.Resources.cupcakeTamaño1;
             this.radioButtonCupcakeMediano.Location = new System.Drawing.Point(83, 37);
             this.radioButtonCupcakeMediano.Name = "radioButtonCupcakeMediano";
             this.radioButtonCupcakeMediano.Size = new System.Drawing.Size(70, 68);
@@ -1239,7 +1237,6 @@
             this.radioButtonCupcakeMini.Appearance = System.Windows.Forms.Appearance.Button;
             this.radioButtonCupcakeMini.AutoSize = true;
             this.radioButtonCupcakeMini.Checked = true;
-            this.radioButtonCupcakeMini.Image = global::Pasteleria.Properties.Resources.cupcakeTamaño1;
             this.radioButtonCupcakeMini.Location = new System.Drawing.Point(8, 37);
             this.radioButtonCupcakeMini.Name = "radioButtonCupcakeMini";
             this.radioButtonCupcakeMini.Size = new System.Drawing.Size(70, 68);
