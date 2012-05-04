@@ -33,3 +33,8 @@ C:\Users\OLGA\Desktop\Pasteleria_cambiosBetty\CapaComunes\bin\Debug\CapaComunes.
 C:\Users\OLGA\Desktop\Pasteleria_cambiosBetty\CapaComunes\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\OLGA\Desktop\Pasteleria_cambiosBetty\CapaComunes\obj\x86\Debug\CapaComunes.dll
 C:\Users\OLGA\Desktop\Pasteleria_cambiosBetty\CapaComunes\obj\x86\Debug\CapaComunes.pdb
+C:\Users\Betty\Desktop\Pasteleria_cambiosBetty\CapaComunes\bin\Debug\CapaComunes.dll
+C:\Users\Betty\Desktop\Pasteleria_cambiosBetty\CapaComunes\bin\Debug\CapaComunes.pdb
+C:\Users\Betty\Desktop\Pasteleria_cambiosBetty\CapaComunes\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Betty\Desktop\Pasteleria_cambiosBetty\CapaComunes\obj\x86\Debug\CapaComunes.dll
+C:\Users\Betty\Desktop\Pasteleria_cambiosBetty\CapaComunes\obj\x86\Debug\CapaComunes.pdb

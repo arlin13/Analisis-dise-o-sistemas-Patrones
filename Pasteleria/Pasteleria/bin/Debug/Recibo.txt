@@ -1,0 +1,18 @@
+			REPOSTERÍA
+	equiporeposteria@gmail.com
+TIJUANA BAJA CALIFORNIA C.P 22500
+--------------------------------------
+Empleado: Beatriz
+ID: 15
+--------------------------------------
+Recibo de cliente
+MASTERCARD 
+Número de cuenta: 
+4000 0012 3456 7899
+
+SUBTOTAL:					$	328
+DESCUENTO:			10%		$	-32.8
+TOTAL:						$	295
+--------------------------------------
+		Gracias por su compra!
+	   01/05/2012 03:37:20 p.m.

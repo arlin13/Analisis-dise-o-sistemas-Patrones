@@ -61,3 +61,12 @@ C:\Users\OLGA\Desktop\Pasteleria_cambiosBetty\CapaNegocios\bin\Debug\CapaDatos.p
 C:\Users\OLGA\Desktop\Pasteleria_cambiosBetty\CapaNegocios\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\OLGA\Desktop\Pasteleria_cambiosBetty\CapaNegocios\obj\x86\Debug\CapaNegocios.dll
 C:\Users\OLGA\Desktop\Pasteleria_cambiosBetty\CapaNegocios\obj\x86\Debug\CapaNegocios.pdb
+C:\Users\Betty\Desktop\Pasteleria_cambiosBetty\CapaNegocios\bin\Debug\CapaNegocios.dll
+C:\Users\Betty\Desktop\Pasteleria_cambiosBetty\CapaNegocios\bin\Debug\CapaNegocios.pdb
+C:\Users\Betty\Desktop\Pasteleria_cambiosBetty\CapaNegocios\bin\Debug\CapaComunes.dll
+C:\Users\Betty\Desktop\Pasteleria_cambiosBetty\CapaNegocios\bin\Debug\CapaDatos.dll
+C:\Users\Betty\Desktop\Pasteleria_cambiosBetty\CapaNegocios\bin\Debug\CapaComunes.pdb
+C:\Users\Betty\Desktop\Pasteleria_cambiosBetty\CapaNegocios\bin\Debug\CapaDatos.pdb
+C:\Users\Betty\Desktop\Pasteleria_cambiosBetty\CapaNegocios\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Betty\Desktop\Pasteleria_cambiosBetty\CapaNegocios\obj\x86\Debug\CapaNegocios.dll
+C:\Users\Betty\Desktop\Pasteleria_cambiosBetty\CapaNegocios\obj\x86\Debug\CapaNegocios.pdb

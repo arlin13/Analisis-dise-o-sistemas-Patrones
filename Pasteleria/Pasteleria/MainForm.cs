@@ -1,18 +1,25 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Collections.Generic;
+using System.Diagnostics;
+using CapaNegocios;
+using CapaComunes;
+using System.IO;
 
 namespace Pasteleria
 {
     public partial class MainForm : Form
     {
-        List<string> listaPasteles = new List<string>();
-        List<double> listaCostoPasteles = new List<double>();
-
+        List<double> listaCostoProducto = new List<double>();
+        List<string> listaProducto = new List<string>();
+        Logica logica = new Logica();
+        LoginForm login = new LoginForm();
+        Empleado emp;
+        
         public MainForm()
         {
             InitializeComponent();
-            listaPasteles.Add("Precio\tSabor\t\tForma\t\tTamaño\t\t\tExtras");
+            listaProducto.Add("Precio\tSabor\t\tForma\t\tTamaño\t\t\tExtras");
         }
 
         #region Menu
@@ -30,45 +37,22 @@ namespace Pasteleria
             mantenimiento.Show();
         }
         //Ventas
-        private void reporteToolStripMenuItem_Click(object sender, EventArgs e)
+        private void verVentasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("El reporte de ventas se ha creado.");
-            //Convertir a CSV
-            //StreamWriter sw = new StreamWriter("Ventas Totales.csv");
-            //string strHeader = datagridview.Columns[0].HeaderText;
-
-            //for (int i = 1; i < datagridview.Columns.Count; i++)
-            //{
-            //    strHeader += "," + datagridview.Columns[i].HeaderText;
-            //}
-
-            //sw.WriteLine(strHeader);
-
-
-            //for (int m = 0; m < datagridview.Rows.Count; m++)
-            //{
-            //    string strRowValue = "";
-            //    strRowValue += datagridview.Rows[m].Cells[0].Value;
-
-            //    for (int n = 0; n < datagridview.Columns.Count; n++)
-            //    {
-            //        strRowValue += "," + datagridview.Rows[m].Cells[n].Value;
-            //    }
-
-            //    sw.WriteLine(strRowValue);
-            //}
-
-            //sw.Close();
+            VentasTotales ventastotales = new VentasTotales();
+            ventastotales.Show();
         }
-        //Ayuda
+
+        //Acerca de
         private void verAyudaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+        {       
             AcercaDe ayuda = new AcercaDe();
             ayuda.Show();
         }
+
         #endregion Menu
 
-        #region Eventos radiobuttons
+        #region Eventos radiobuttons [Pasteles]
         private void checkBoxExtrasFruta_CheckedChanged(object sender, EventArgs e)
         {
             if (!checkBoxExtrasFruta.Checked)
@@ -117,120 +101,269 @@ namespace Pasteleria
             else
                 textBoxPastelExtrasDibujo.Enabled = true;
         }
-        #endregion Eventos radiobuttons
+        #endregion 
 
-        #region Botones
+        #region Botón Agregar [Pasteles]
+       
         private void buttonAgregar_Click(object sender, EventArgs e)
         {
-            try
+            Pastel pastel;
+
+            if (radioButtonTamañoChico.Checked)
+                pastel = new PastelChico();
+            else if (radioButtonTamañoMediano.Checked)
+                pastel = new PastelMediano();
+            else
+                pastel = new PastelGrande();
+
+            if (radioButtonSaborChocolate.Checked)
+                pastel.Sabor = Sabor.Chocolate;
+            else if (radioButtonSaborVainilla.Checked)
+                pastel.Sabor = Sabor.Vainilla;
+            else
+                pastel.Sabor = Sabor.TresLeches;
+
+            if (radioButtonFormaCircular.Checked)
+                pastel.Forma = Forma.Circular;
+            else if (radioButtonFormaCorazon.Checked)
+                pastel.Forma = Forma.Corazon;
+            else
+                pastel.Forma = Forma.Cuadrado;
+
+            if (checkBoxExtrasFruta.Checked)
             {
-                Pastel pastel;
-
-                if (radioButtonTamañoChico.Checked)
-                    pastel = new PastelChico();
-                else if (radioButtonTamañoMediano.Checked)
-                    pastel = new PastelMediano();
-                else
-                    pastel = new PastelGrande();
-
-                if (radioButtonSaborChocolate.Checked)
-                    pastel.Sabor = Sabor.Chocolate;
-                else if (radioButtonSaborVainilla.Checked)
-                    pastel.Sabor = Sabor.Vainilla;
-                else
-                    pastel.Sabor = Sabor.TresLeches;
-
-                if (radioButtonFormaCircular.Checked)
-                    pastel.Forma = Forma.Circular;
-                else if (radioButtonFormaCorazon.Checked)
-                    pastel.Forma = Forma.Corazon;
-                else
-                    pastel.Forma = Forma.Cuadrado;
-
-                if (checkBoxExtrasFruta.Checked)
-                {
-                    pastel = new Fruta(pastel);
-                }
-                if (checkBoxExtrasNieve.Checked)
-                {
-                    pastel = new Nieve(pastel);
-                }
-                if (checkBoxExtrasRelleno.Checked)
-                {
-                    pastel = new Relleno(pastel);
-                }
-
-                listaPasteles.Add(pastel.CalculaPrecio() + "\t" + pastel.Sabor + "\t" + pastel.Forma + "\t\t" + pastel.ObtieneDescripcion());
-                listboxCompraRealizada.DataSource = null;
-                listboxCompraRealizada.DataSource = listaPasteles;
-
-                listaCostoPasteles.Add(pastel.CalculaPrecio());
-                double total = 0.00;
-                foreach (var item in listaCostoPasteles)
-                {
-                    total += item;
-                }
-                textBoxTotal.Text = total.ToString();
+                pastel = new Fruta(pastel);
             }
-            catch (Exception ex)
-            { 
-            }
-        }
-        private void buttonPagar_Click(object sender, EventArgs e)
-        {
-            try
+            if (checkBoxExtrasNieve.Checked)
             {
-                Context context;
-
-                double total = double.Parse(textBoxTotal.Text);
-
-                if (radioButtonTarjetaClienteDistinguido.Checked)
-                {
-                    context = new Context(new TarjetaClienteDistinguido());
-                    MessageBox.Show("Total a pagar con tarjeta de cliente distinguido: "
-                        + context.ContextInterface(total, .20));
-                }
-                else
-                {
-                    string descuento = "5";
-                    double descuentoCupon = .05;
-                    context = new Context(new Cupon());
-
-                    if (radioButtonCupon10.Checked)
-                    {
-                        descuento = "10";
-                        descuentoCupon = .10;
-                    }
-                    else if (radioButtonCupon15.Checked)
-                    {
-                        descuento = "15";
-                        descuentoCupon = .15;
-                    }
-                    MessageBox.Show("Total a pagar con cupón del " + descuento + "%"
-                        + context.ContextInterface(total, descuentoCupon));
-                }
+                pastel = new Nieve(pastel);
             }
-            catch (Exception error)
-            { }
-        }
-        #endregion Botones
+            if (checkBoxExtrasRelleno.Checked)
+            {
+                pastel = new Relleno(pastel);
+            }
 
-        private void lbCompraRealizada_DoubleClick(object sender, EventArgs e)
-        {
-            int remove = listboxCompraRealizada.SelectedIndex;
-            listaPasteles.RemoveAt(remove);
-            listboxCompraRealizada.DataSource = null;
-            listboxCompraRealizada.DataSource = listaPasteles;
+            listaProducto.Add(pastel.CalculaPrecio() + "\t" + pastel.Sabor + "\t" + pastel.Forma + "\t\t" + pastel.ObtieneDescripcion());
+            lbCompraRealizada.DataSource = null;
+            lbCompraRealizada.DataSource = listaProducto;
 
-            listaCostoPasteles.RemoveAt(remove);
-
+            listaCostoProducto.Add(pastel.CalculaPrecio());
             double total = 0.00;
-            foreach (var item in listaCostoPasteles)
+           
+            foreach (var item in listaCostoProducto)
             {
                 total += item;
             }
-            textBoxTotal.Text = total.ToString();
 
+            textBoxTotal.Text = total.ToString();
         }
+        #endregion
+
+        #region Eventos radiobuttons [Cupcakes]
+        private void checkBoxExtrasCases_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!checkBoxExtrasCases.Checked)
+            {
+                comboBoxExtrasCases.Enabled = false;
+                comboBoxExtrasCases.SelectedIndex = -1;
+            }
+            else
+            {
+                comboBoxExtrasCases.Enabled = true;
+                comboBoxExtrasCases.SelectedIndex = 0;
+            }
+        }
+
+        private void checkBoxExtrasFrosting_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!checkBoxExtrasFrosting.Checked)
+            {
+                comboBoxExtrasFrosting.Enabled = false;
+                comboBoxExtrasFrosting.SelectedIndex = -1;
+            }
+            else
+            {
+                comboBoxExtrasFrosting.Enabled = true;
+                comboBoxExtrasFrosting.SelectedIndex = 0;
+            }
+        }
+
+        private void checkBoxExtrasSprinkles_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!checkBoxExtrasSprinkles.Checked)
+            {
+                comboBoxExtrasSprinkles.Enabled = false;
+                comboBoxExtrasSprinkles.SelectedIndex = -1;
+            }
+            else 
+            {
+                comboBoxExtrasSprinkles.Enabled = true;
+                comboBoxExtrasSprinkles.SelectedIndex = 0;
+            }
+        }
+        #endregion
+
+        #region Botón Agregar [Cupcakes]
+        private void buttonAgregarCupcake_Click(object sender, EventArgs e)
+        {
+            Cupcake cupcake;
+
+            if (radioButtonCupcakeMini.Checked)
+                cupcake = new CupcakeMini();
+            else if (radioButtonCupcakeMediano.Checked)
+                cupcake = new CupcakeMediano();
+            else
+                cupcake = new CupcakeJumbo();
+
+            if (radioButtonCupcakeChocolate.Checked)
+            cupcake.SaborCupcake = SaborCupcake.Chocolate;
+            else if(radioButtonCupcakeVainilla.Checked)
+                cupcake.SaborCupcake = SaborCupcake.Vainilla;
+            else 
+                cupcake.SaborCupcake = SaborCupcake.TresLeches;
+
+            if (checkBoxExtrasCases.Checked) 
+            {
+                cupcake = new Cases(cupcake);
+            }
+            if (checkBoxExtrasFrosting.Checked)
+            {
+                cupcake = new Frosting (cupcake);
+            }
+            if (checkBoxExtrasSprinkles.Checked)
+            {
+                cupcake = new Sprinkles (cupcake);
+            }
+
+            listaProducto.Add(cupcake.CalculaPrecio() + "\t" + cupcake.SaborCupcake + "\t-----\t\t" + cupcake.ObtieneDescripcion());
+            lbCompraRealizada.DataSource = null;
+            lbCompraRealizada.DataSource = listaProducto;
+
+            listaCostoProducto.Add(cupcake.CalculaPrecio());
+            double total = 0.00;
+
+            foreach (var item in listaCostoProducto)
+            {
+                total += item;
+            }
+
+            textBoxTotal.Text = total.ToString();
+        }
+        #endregion
+       
+        #region Pagar
+        private void buttonPagar_Click(object sender, EventArgs e)
+        {
+            DateTime fechaRecibo = File.GetLastWriteTime("Recibo.txt");
+            Context context;
+
+            if (textBoxTotal.Text.Equals(""))
+            {
+                MessageBox.Show("No ha agregado artículos a la lista de compra.");
+            }
+            
+            else
+            {
+                try 
+                {
+                    double total = double.Parse(textBoxTotal.Text);
+
+                    if (radioButtonTarjetaClienteDistinguido.Checked)
+                    {
+                        context = new Context(new TarjetaClienteDistinguido());
+                        MessageBox.Show("Total a pagar con tarjeta de cliente distinguido: "
+                            + context.ContextInterface(total, .20));
+                    }
+                    else
+                    {
+                        context = new Context(new Cupon());
+                        string descuento = "5";
+                        double descuentoCupon = .05;                       
+                        string tarjeta = null;
+
+                        if (radioButtonCupon10.Checked)
+                        {
+                             descuento = "10";
+                             descuentoCupon = .10;
+                        }
+
+                        else if (radioButtonCupon15.Checked)
+                        {
+                             descuento = "15";
+                             descuentoCupon = .15;
+                        }
+
+                        if (radioButtonMasterCard.Checked)
+                        {
+                            tarjeta = "MASTERCARD \nNúmero de cuenta: \n4000 0012 3456 7899";
+                        }
+
+                        else if (radioButtonVisa.Checked)
+                        {
+                            tarjeta = "VISA \nNúmero de cuenta: \n4552 7204 1234 5678";
+                        }
+
+                        Venta ven = new Venta
+                        {
+                            idEmpleado = LoginForm.empleado.idEmpleado,
+                            Monto = Convert.ToInt32(textBoxTotal.Text),
+                        };
+
+                        logica.CapturarVenta(ven);
+
+                       string recibo = "\t\t\tREPOSTERÍA\n\tequiporeposteria@gmail.com\nTIJUANA BAJA CALIFORNIA C.P 22500" +
+                                        "\n--------------------------------------\nEmpleado: " +
+                                        LoginForm.empleado.Nombre + "\nID: " +
+                                        LoginForm.empleado.idEmpleado +
+                                        "\n--------------------------------------\nRecibo de cliente\n" +
+                                        tarjeta + "\n\nSUBTOTAL:\t\t\t\t\t$\t" +
+                                        textBoxTotal.Text + "\nDESCUENTO:\t\t\t" + descuento + "%\t\t$\t-" +
+                                        (descuentoCupon * Convert.ToDouble(textBoxTotal.Text)) +
+                                        "\nTOTAL:\t\t\t\t\t\t$\t" + context.ContextInterface(total, descuentoCupon) +
+                                        "\n--------------------------------------\n\t\tGracias por su compra!\n\t   " +
+                                        fechaRecibo;
+
+                        File.WriteAllText("Recibo.txt", recibo);
+                    }
+
+                    Process.Start("Recibo.txt");
+                }
+
+                catch(Exception exc)
+                {
+                     string debug = exc.Message;
+                }               
+            }
+
+        }                
+        #endregion 
+
+        #region Lista de Compras
+        private void lbCompraRealizada_DoubleClick(object sender, EventArgs e)
+        {
+            int remove = lbCompraRealizada.SelectedIndex;
+            listaProducto.RemoveAt(remove);
+            lbCompraRealizada.DataSource = null;
+            lbCompraRealizada.DataSource = listaProducto;
+
+            listaCostoProducto.RemoveAt(remove);
+
+            double total = 0.00;
+            foreach (var item in listaCostoProducto)
+            {
+                total += item;
+            }
+
+            textBoxTotal.Text = total.ToString();
+        }
+        #endregion
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {      
+            emp = LoginForm.empleado;
+            labelIdEmpleado.Text = emp.idEmpleado.ToString();
+            labelEmpleado.Text = emp.Nombre;
+        }
+
     }
 }

@@ -163,7 +163,6 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBoxIDEmpleado;
         private System.Windows.Forms.TextBox textBoxContrasenaEmpleado;
         private System.Windows.Forms.Button buttonIniciarSesion;
         private System.Windows.Forms.GroupBox groupBoxLogin;
@@ -172,6 +171,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel linkLabelCrearCuenta;
         private System.Windows.Forms.Panel panelLogo;
+        public System.Windows.Forms.TextBox textBoxIDEmpleado;
     }
 }
 

@@ -74,9 +74,72 @@ namespace Pasteleria.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap casesCupcake {
+            get {
+                object obj = ResourceManager.GetObject("casesCupcake", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap casesCupcake1 {
+            get {
+                object obj = ResourceManager.GetObject("casesCupcake1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap casesCupcake2 {
+            get {
+                object obj = ResourceManager.GetObject("casesCupcake2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap CerrarSesion {
             get {
                 object obj = ResourceManager.GetObject("CerrarSesion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap cupcakeTamaño {
+            get {
+                object obj = ResourceManager.GetObject("cupcakeTamaño", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap cupcakeTamaño1 {
+            get {
+                object obj = ResourceManager.GetObject("cupcakeTamaño1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap frostingCupcakes {
+            get {
+                object obj = ResourceManager.GetObject("frostingCupcakes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap frostingCupcakes1 {
+            get {
+                object obj = ResourceManager.GetObject("frostingCupcakes1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap frostingCupcakes2 {
+            get {
+                object obj = ResourceManager.GetObject("frostingCupcakes2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap frostingCupcakes3 {
+            get {
+                object obj = ResourceManager.GetObject("frostingCupcakes3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -140,6 +203,13 @@ namespace Pasteleria.Properties {
         internal static System.Drawing.Bitmap Reporte {
             get {
                 object obj = ResourceManager.GetObject("Reporte", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap sprinklesCupcakes {
+            get {
+                object obj = ResourceManager.GetObject("sprinklesCupcakes", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

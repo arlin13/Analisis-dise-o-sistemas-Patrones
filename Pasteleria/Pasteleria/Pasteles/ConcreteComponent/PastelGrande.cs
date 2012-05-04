@@ -8,6 +8,7 @@ namespace Pasteleria
         {
             Descripcion = "Pastel de dos planchas. ";
         }
+
         public override string ObtieneDescripcion()
         {
             return Descripcion;

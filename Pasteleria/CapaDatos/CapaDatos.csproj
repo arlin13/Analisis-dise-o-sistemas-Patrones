@@ -45,7 +45,6 @@
   <ItemGroup>
     <Compile Include="BaseDatos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SqlConnection\SqlConnection.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CapaComunes\CapaComunes.csproj">

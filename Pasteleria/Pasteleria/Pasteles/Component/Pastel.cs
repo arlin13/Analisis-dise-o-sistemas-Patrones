@@ -7,7 +7,7 @@ namespace Pasteleria
         public string Descripcion { get; set; }
         public Sabor Sabor { get; set; }
         public Forma Forma { get; set; }
-         
+
         public abstract string ObtieneDescripcion();
         public abstract double CalculaPrecio();
     }

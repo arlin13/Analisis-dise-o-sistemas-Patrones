@@ -32,21 +32,22 @@
             this.panelLogin = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBoxLogin = new System.Windows.Forms.GroupBox();
-            this.textboxUsuario = new System.Windows.Forms.TextBox();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboboxGenero = new System.Windows.Forms.ComboBox();
+            this.cbxGenero = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtConfirmaContraseña = new System.Windows.Forms.TextBox();
+            this.comboBoxCorreo = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textboxContrasena = new System.Windows.Forms.TextBox();
+            this.txtContraseña = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textboxApellido = new System.Windows.Forms.TextBox();
+            this.txtApellido = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonCrearCuenta = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.textboxCorreo = new System.Windows.Forms.TextBox();
+            this.txtCorreo = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.groupBoxLogin.SuspendLayout();
             this.SuspendLayout();
@@ -72,21 +73,22 @@
             // groupBoxLogin
             // 
             this.groupBoxLogin.BackColor = System.Drawing.Color.Transparent;
-            this.groupBoxLogin.Controls.Add(this.textboxUsuario);
+            this.groupBoxLogin.Controls.Add(this.txtUsuario);
             this.groupBoxLogin.Controls.Add(this.label7);
-            this.groupBoxLogin.Controls.Add(this.comboboxGenero);
+            this.groupBoxLogin.Controls.Add(this.cbxGenero);
             this.groupBoxLogin.Controls.Add(this.label6);
             this.groupBoxLogin.Controls.Add(this.label5);
             this.groupBoxLogin.Controls.Add(this.txtConfirmaContraseña);
+            this.groupBoxLogin.Controls.Add(this.comboBoxCorreo);
             this.groupBoxLogin.Controls.Add(this.label4);
-            this.groupBoxLogin.Controls.Add(this.textboxContrasena);
+            this.groupBoxLogin.Controls.Add(this.txtContraseña);
             this.groupBoxLogin.Controls.Add(this.label3);
-            this.groupBoxLogin.Controls.Add(this.textboxApellido);
+            this.groupBoxLogin.Controls.Add(this.txtApellido);
             this.groupBoxLogin.Controls.Add(this.label1);
             this.groupBoxLogin.Controls.Add(this.buttonCrearCuenta);
             this.groupBoxLogin.Controls.Add(this.label2);
             this.groupBoxLogin.Controls.Add(this.txtNombre);
-            this.groupBoxLogin.Controls.Add(this.textboxCorreo);
+            this.groupBoxLogin.Controls.Add(this.txtCorreo);
             this.groupBoxLogin.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxLogin.Location = new System.Drawing.Point(60, 10);
             this.groupBoxLogin.Name = "groupBoxLogin";
@@ -97,12 +99,12 @@
             // 
             // txtUsuario
             // 
-            this.textboxUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textboxUsuario.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textboxUsuario.Location = new System.Drawing.Point(52, 51);
-            this.textboxUsuario.Name = "txtUsuario";
-            this.textboxUsuario.Size = new System.Drawing.Size(206, 20);
-            this.textboxUsuario.TabIndex = 0;
+            this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtUsuario.Location = new System.Drawing.Point(52, 51);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(206, 20);
+            this.txtUsuario.TabIndex = 18;
             // 
             // label7
             // 
@@ -116,15 +118,15 @@
             // 
             // cbxGenero
             // 
-            this.comboboxGenero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboboxGenero.FormattingEnabled = true;
-            this.comboboxGenero.Items.AddRange(new object[] {
+            this.cbxGenero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxGenero.FormattingEnabled = true;
+            this.cbxGenero.Items.AddRange(new object[] {
             "Femenino",
             "Masculino"});
-            this.comboboxGenero.Location = new System.Drawing.Point(52, 250);
-            this.comboboxGenero.Name = "cbxGenero";
-            this.comboboxGenero.Size = new System.Drawing.Size(206, 23);
-            this.comboboxGenero.TabIndex = 6;
+            this.cbxGenero.Location = new System.Drawing.Point(52, 250);
+            this.cbxGenero.Name = "cbxGenero";
+            this.cbxGenero.Size = new System.Drawing.Size(206, 23);
+            this.cbxGenero.TabIndex = 6;
             // 
             // label6
             // 
@@ -155,6 +157,19 @@
             this.txtConfirmaContraseña.Size = new System.Drawing.Size(206, 20);
             this.txtConfirmaContraseña.TabIndex = 5;
             // 
+            // comboBoxCorreo
+            // 
+            this.comboBoxCorreo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCorreo.FormattingEnabled = true;
+            this.comboBoxCorreo.Items.AddRange(new object[] {
+            "@gmail.com",
+            "@hotmail.com",
+            "@yahoo.com"});
+            this.comboBoxCorreo.Location = new System.Drawing.Point(159, 128);
+            this.comboBoxCorreo.Name = "comboBoxCorreo";
+            this.comboBoxCorreo.Size = new System.Drawing.Size(100, 23);
+            this.comboBoxCorreo.TabIndex = 3;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -167,12 +182,12 @@
             // 
             // txtContraseña
             // 
-            this.textboxContrasena.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textboxContrasena.Location = new System.Drawing.Point(52, 170);
-            this.textboxContrasena.Name = "txtContraseña";
-            this.textboxContrasena.PasswordChar = '●';
-            this.textboxContrasena.Size = new System.Drawing.Size(206, 20);
-            this.textboxContrasena.TabIndex = 4;
+            this.txtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContraseña.Location = new System.Drawing.Point(52, 170);
+            this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.PasswordChar = '●';
+            this.txtContraseña.Size = new System.Drawing.Size(206, 20);
+            this.txtContraseña.TabIndex = 4;
             // 
             // label3
             // 
@@ -186,11 +201,11 @@
             // 
             // txtApellido
             // 
-            this.textboxApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textboxApellido.Location = new System.Drawing.Point(158, 90);
-            this.textboxApellido.Name = "txtApellido";
-            this.textboxApellido.Size = new System.Drawing.Size(100, 20);
-            this.textboxApellido.TabIndex = 2;
+            this.txtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellido.Location = new System.Drawing.Point(158, 90);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(100, 20);
+            this.txtApellido.TabIndex = 1;
             // 
             // label1
             // 
@@ -229,15 +244,15 @@
             this.txtNombre.Location = new System.Drawing.Point(52, 90);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
-            this.txtNombre.TabIndex = 1;
+            this.txtNombre.TabIndex = 0;
             // 
             // txtCorreo
             // 
-            this.textboxCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textboxCorreo.Location = new System.Drawing.Point(52, 130);
-            this.textboxCorreo.Name = "txtCorreo";
-            this.textboxCorreo.Size = new System.Drawing.Size(206, 20);
-            this.textboxCorreo.TabIndex = 3;
+            this.txtCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCorreo.Location = new System.Drawing.Point(52, 130);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Size = new System.Drawing.Size(100, 20);
+            this.txtCorreo.TabIndex = 2;
             // 
             // NuevaCuenta
             // 
@@ -265,16 +280,17 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox comboBoxCorreo;
         private System.Windows.Forms.Label label6;
         public System.Windows.Forms.TextBox txtNombre;
-        public System.Windows.Forms.TextBox textboxCorreo;
-        public System.Windows.Forms.TextBox textboxContrasena;
-        public System.Windows.Forms.TextBox textboxApellido;
+        public System.Windows.Forms.TextBox txtCorreo;
+        public System.Windows.Forms.TextBox txtContraseña;
+        public System.Windows.Forms.TextBox txtApellido;
         public System.Windows.Forms.TextBox txtConfirmaContraseña;
-        public System.Windows.Forms.ComboBox comboboxGenero;
+        public System.Windows.Forms.ComboBox cbxGenero;
         public System.Windows.Forms.Button buttonCrearCuenta;
         public System.Windows.Forms.Panel panel1;
-        public System.Windows.Forms.TextBox textboxUsuario;
+        public System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Label label7;
     }
 }

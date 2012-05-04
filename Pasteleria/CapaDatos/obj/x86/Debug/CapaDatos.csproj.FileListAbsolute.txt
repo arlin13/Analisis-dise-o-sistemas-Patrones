@@ -47,3 +47,10 @@ C:\Users\OLGA\Desktop\Pasteleria_cambiosBetty\CapaDatos\bin\Debug\CapaComunes.pd
 C:\Users\OLGA\Desktop\Pasteleria_cambiosBetty\CapaDatos\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\OLGA\Desktop\Pasteleria_cambiosBetty\CapaDatos\obj\x86\Debug\CapaDatos.dll
 C:\Users\OLGA\Desktop\Pasteleria_cambiosBetty\CapaDatos\obj\x86\Debug\CapaDatos.pdb
+C:\Users\Betty\Desktop\Pasteleria_cambiosBetty\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Betty\Desktop\Pasteleria_cambiosBetty\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Betty\Desktop\Pasteleria_cambiosBetty\CapaDatos\bin\Debug\CapaComunes.dll
+C:\Users\Betty\Desktop\Pasteleria_cambiosBetty\CapaDatos\bin\Debug\CapaComunes.pdb
+C:\Users\Betty\Desktop\Pasteleria_cambiosBetty\CapaDatos\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Betty\Desktop\Pasteleria_cambiosBetty\CapaDatos\obj\x86\Debug\CapaDatos.dll
+C:\Users\Betty\Desktop\Pasteleria_cambiosBetty\CapaDatos\obj\x86\Debug\CapaDatos.pdb

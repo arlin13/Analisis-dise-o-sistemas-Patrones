@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
-namespace Pasteleria
+namespace Pasteleria//.FormaDePago.ConcreteStrategy
 {
     class TarjetaClienteDistinguido : FormaDePago
     {
