@@ -51,6 +51,7 @@
     <Compile Include="Cupcakes\ConcreteDecorators\Frosting.cs" />
     <Compile Include="Cupcakes\ConcreteDecorators\Sprinkles.cs" />
     <Compile Include="Cupcakes\Decorator\CupcakeDecorator.cs" />
+    <Compile Include="IArticulo.cs" />
     <Compile Include="Menu\AcercaDe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,7 +147,9 @@
     <EmbeddedResource Include="Login\RecordarContraseña.resx">
       <DependentUpon>RecordarContraseña.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

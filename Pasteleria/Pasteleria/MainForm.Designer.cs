@@ -99,7 +99,7 @@
             this.label30 = new System.Windows.Forms.Label();
             this.radioButtonSaborVainilla = new System.Windows.Forms.RadioButton();
             this.label31 = new System.Windows.Forms.Label();
-            this.radioButtonSabor3leches = new System.Windows.Forms.RadioButton();
+            this.radioButtonSaborTresLeches = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPasteles = new System.Windows.Forms.TabPage();
@@ -115,12 +115,12 @@
             this.checkBoxExtrasFrosting = new System.Windows.Forms.CheckBox();
             this.checkBoxExtrasSprinkles = new System.Windows.Forms.CheckBox();
             this.checkBoxExtrasCases = new System.Windows.Forms.CheckBox();
-            this.radioButtonCupcakeJumbo = new System.Windows.Forms.RadioButton();
+            this.radioButtonCupcakeTamañoJumbo = new System.Windows.Forms.RadioButton();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label36 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
-            this.radioButtonCupcakeMediano = new System.Windows.Forms.RadioButton();
-            this.radioButtonCupcakeMini = new System.Windows.Forms.RadioButton();
+            this.radioButtonCupcakeTamañoMediano = new System.Windows.Forms.RadioButton();
+            this.radioButtonCupcakeTamañoMini = new System.Windows.Forms.RadioButton();
             this.label34 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
@@ -130,11 +130,11 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.radioButtonCupcakeChocolate = new System.Windows.Forms.RadioButton();
+            this.radioButtonCupcakeSaborChocolate = new System.Windows.Forms.RadioButton();
             this.label18 = new System.Windows.Forms.Label();
-            this.radioButtonCupcakeVainilla = new System.Windows.Forms.RadioButton();
+            this.radioButtonCupcakeSaborVainilla = new System.Windows.Forms.RadioButton();
             this.label24 = new System.Windows.Forms.Label();
-            this.radioButtonCupcakeTresLeches = new System.Windows.Forms.RadioButton();
+            this.radioButtonCupcakeSaborTresLeches = new System.Windows.Forms.RadioButton();
             this.label6 = new System.Windows.Forms.Label();
             this.Empleado = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
@@ -853,7 +853,7 @@
             this.groupBox1.Controls.Add(this.label30);
             this.groupBox1.Controls.Add(this.radioButtonSaborVainilla);
             this.groupBox1.Controls.Add(this.label31);
-            this.groupBox1.Controls.Add(this.radioButtonSabor3leches);
+            this.groupBox1.Controls.Add(this.radioButtonSaborTresLeches);
             this.groupBox1.ForeColor = System.Drawing.Color.DarkRed;
             this.groupBox1.Location = new System.Drawing.Point(6, 61);
             this.groupBox1.Name = "groupBox1";
@@ -955,14 +955,14 @@
             // 
             // radioButtonSabor3leches
             // 
-            this.radioButtonSabor3leches.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioButtonSabor3leches.AutoSize = true;
-            this.radioButtonSabor3leches.Image = ((System.Drawing.Image)(resources.GetObject("radioButtonSabor3leches.Image")));
-            this.radioButtonSabor3leches.Location = new System.Drawing.Point(329, 19);
-            this.radioButtonSabor3leches.Name = "radioButtonSabor3leches";
-            this.radioButtonSabor3leches.Size = new System.Drawing.Size(66, 66);
-            this.radioButtonSabor3leches.TabIndex = 31;
-            this.radioButtonSabor3leches.UseVisualStyleBackColor = true;
+            this.radioButtonSaborTresLeches.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButtonSaborTresLeches.AutoSize = true;
+            this.radioButtonSaborTresLeches.Image = ((System.Drawing.Image)(resources.GetObject("radioButtonSabor3leches.Image")));
+            this.radioButtonSaborTresLeches.Location = new System.Drawing.Point(329, 19);
+            this.radioButtonSaborTresLeches.Name = "radioButtonSabor3leches";
+            this.radioButtonSaborTresLeches.Size = new System.Drawing.Size(66, 66);
+            this.radioButtonSaborTresLeches.TabIndex = 31;
+            this.radioButtonSaborTresLeches.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -1010,7 +1010,7 @@
             this.tabCupcakes.BackColor = System.Drawing.Color.Snow;
             this.tabCupcakes.Controls.Add(this.buttonAgregarCupcake);
             this.tabCupcakes.Controls.Add(this.groupBox5);
-            this.tabCupcakes.Controls.Add(this.radioButtonCupcakeJumbo);
+            this.tabCupcakes.Controls.Add(this.radioButtonCupcakeTamañoJumbo);
             this.tabCupcakes.Controls.Add(this.groupBox4);
             this.tabCupcakes.Controls.Add(this.groupBox3);
             this.tabCupcakes.Controls.Add(this.label6);
@@ -1176,20 +1176,20 @@
             // 
             // radioButtonCupcakeJumbo
             // 
-            this.radioButtonCupcakeJumbo.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioButtonCupcakeJumbo.AutoSize = true;
-            this.radioButtonCupcakeJumbo.Location = new System.Drawing.Point(195, 280);
-            this.radioButtonCupcakeJumbo.Name = "radioButtonCupcakeJumbo";
-            this.radioButtonCupcakeJumbo.Size = new System.Drawing.Size(70, 68);
-            this.radioButtonCupcakeJumbo.TabIndex = 32;
-            this.radioButtonCupcakeJumbo.UseVisualStyleBackColor = true;
+            this.radioButtonCupcakeTamañoJumbo.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButtonCupcakeTamañoJumbo.AutoSize = true;
+            this.radioButtonCupcakeTamañoJumbo.Location = new System.Drawing.Point(195, 280);
+            this.radioButtonCupcakeTamañoJumbo.Name = "radioButtonCupcakeJumbo";
+            this.radioButtonCupcakeTamañoJumbo.Size = new System.Drawing.Size(70, 68);
+            this.radioButtonCupcakeTamañoJumbo.TabIndex = 32;
+            this.radioButtonCupcakeTamañoJumbo.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.label36);
             this.groupBox4.Controls.Add(this.label38);
-            this.groupBox4.Controls.Add(this.radioButtonCupcakeMediano);
-            this.groupBox4.Controls.Add(this.radioButtonCupcakeMini);
+            this.groupBox4.Controls.Add(this.radioButtonCupcakeTamañoMediano);
+            this.groupBox4.Controls.Add(this.radioButtonCupcakeTamañoMini);
             this.groupBox4.Controls.Add(this.label34);
             this.groupBox4.Controls.Add(this.label25);
             this.groupBox4.Controls.Add(this.label28);
@@ -1224,25 +1224,25 @@
             // 
             // radioButtonCupcakeMediano
             // 
-            this.radioButtonCupcakeMediano.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioButtonCupcakeMediano.AutoSize = true;
-            this.radioButtonCupcakeMediano.Location = new System.Drawing.Point(83, 37);
-            this.radioButtonCupcakeMediano.Name = "radioButtonCupcakeMediano";
-            this.radioButtonCupcakeMediano.Size = new System.Drawing.Size(70, 68);
-            this.radioButtonCupcakeMediano.TabIndex = 31;
-            this.radioButtonCupcakeMediano.UseVisualStyleBackColor = true;
+            this.radioButtonCupcakeTamañoMediano.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButtonCupcakeTamañoMediano.AutoSize = true;
+            this.radioButtonCupcakeTamañoMediano.Location = new System.Drawing.Point(83, 37);
+            this.radioButtonCupcakeTamañoMediano.Name = "radioButtonCupcakeMediano";
+            this.radioButtonCupcakeTamañoMediano.Size = new System.Drawing.Size(70, 68);
+            this.radioButtonCupcakeTamañoMediano.TabIndex = 31;
+            this.radioButtonCupcakeTamañoMediano.UseVisualStyleBackColor = true;
             // 
             // radioButtonCupcakeMini
             // 
-            this.radioButtonCupcakeMini.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioButtonCupcakeMini.AutoSize = true;
-            this.radioButtonCupcakeMini.Checked = true;
-            this.radioButtonCupcakeMini.Location = new System.Drawing.Point(8, 37);
-            this.radioButtonCupcakeMini.Name = "radioButtonCupcakeMini";
-            this.radioButtonCupcakeMini.Size = new System.Drawing.Size(70, 68);
-            this.radioButtonCupcakeMini.TabIndex = 30;
-            this.radioButtonCupcakeMini.TabStop = true;
-            this.radioButtonCupcakeMini.UseVisualStyleBackColor = true;
+            this.radioButtonCupcakeTamañoMini.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButtonCupcakeTamañoMini.AutoSize = true;
+            this.radioButtonCupcakeTamañoMini.Checked = true;
+            this.radioButtonCupcakeTamañoMini.Location = new System.Drawing.Point(8, 37);
+            this.radioButtonCupcakeTamañoMini.Name = "radioButtonCupcakeMini";
+            this.radioButtonCupcakeTamañoMini.Size = new System.Drawing.Size(70, 68);
+            this.radioButtonCupcakeTamañoMini.TabIndex = 30;
+            this.radioButtonCupcakeTamañoMini.TabStop = true;
+            this.radioButtonCupcakeTamañoMini.UseVisualStyleBackColor = true;
             // 
             // label34
             // 
@@ -1291,11 +1291,11 @@
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Controls.Add(this.label17);
-            this.groupBox3.Controls.Add(this.radioButtonCupcakeChocolate);
+            this.groupBox3.Controls.Add(this.radioButtonCupcakeSaborChocolate);
             this.groupBox3.Controls.Add(this.label18);
-            this.groupBox3.Controls.Add(this.radioButtonCupcakeVainilla);
+            this.groupBox3.Controls.Add(this.radioButtonCupcakeSaborVainilla);
             this.groupBox3.Controls.Add(this.label24);
-            this.groupBox3.Controls.Add(this.radioButtonCupcakeTresLeches);
+            this.groupBox3.Controls.Add(this.radioButtonCupcakeSaborTresLeches);
             this.groupBox3.ForeColor = System.Drawing.Color.DarkRed;
             this.groupBox3.Location = new System.Drawing.Point(6, 61);
             this.groupBox3.Name = "groupBox3";
@@ -1351,16 +1351,16 @@
             // 
             // radioButtonCupcakeChocolate
             // 
-            this.radioButtonCupcakeChocolate.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioButtonCupcakeChocolate.AutoSize = true;
-            this.radioButtonCupcakeChocolate.Checked = true;
-            this.radioButtonCupcakeChocolate.Image = ((System.Drawing.Image)(resources.GetObject("radioButtonCupcakeChocolate.Image")));
-            this.radioButtonCupcakeChocolate.Location = new System.Drawing.Point(13, 19);
-            this.radioButtonCupcakeChocolate.Name = "radioButtonCupcakeChocolate";
-            this.radioButtonCupcakeChocolate.Size = new System.Drawing.Size(66, 66);
-            this.radioButtonCupcakeChocolate.TabIndex = 29;
-            this.radioButtonCupcakeChocolate.TabStop = true;
-            this.radioButtonCupcakeChocolate.UseVisualStyleBackColor = true;
+            this.radioButtonCupcakeSaborChocolate.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButtonCupcakeSaborChocolate.AutoSize = true;
+            this.radioButtonCupcakeSaborChocolate.Checked = true;
+            this.radioButtonCupcakeSaborChocolate.Image = ((System.Drawing.Image)(resources.GetObject("radioButtonCupcakeChocolate.Image")));
+            this.radioButtonCupcakeSaborChocolate.Location = new System.Drawing.Point(13, 19);
+            this.radioButtonCupcakeSaborChocolate.Name = "radioButtonCupcakeChocolate";
+            this.radioButtonCupcakeSaborChocolate.Size = new System.Drawing.Size(66, 66);
+            this.radioButtonCupcakeSaborChocolate.TabIndex = 29;
+            this.radioButtonCupcakeSaborChocolate.TabStop = true;
+            this.radioButtonCupcakeSaborChocolate.UseVisualStyleBackColor = true;
             // 
             // label18
             // 
@@ -1375,14 +1375,14 @@
             // 
             // radioButtonCupcakeVainilla
             // 
-            this.radioButtonCupcakeVainilla.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioButtonCupcakeVainilla.AutoSize = true;
-            this.radioButtonCupcakeVainilla.Image = ((System.Drawing.Image)(resources.GetObject("radioButtonCupcakeVainilla.Image")));
-            this.radioButtonCupcakeVainilla.Location = new System.Drawing.Point(161, 19);
-            this.radioButtonCupcakeVainilla.Name = "radioButtonCupcakeVainilla";
-            this.radioButtonCupcakeVainilla.Size = new System.Drawing.Size(66, 66);
-            this.radioButtonCupcakeVainilla.TabIndex = 30;
-            this.radioButtonCupcakeVainilla.UseVisualStyleBackColor = true;
+            this.radioButtonCupcakeSaborVainilla.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButtonCupcakeSaborVainilla.AutoSize = true;
+            this.radioButtonCupcakeSaborVainilla.Image = ((System.Drawing.Image)(resources.GetObject("radioButtonCupcakeVainilla.Image")));
+            this.radioButtonCupcakeSaborVainilla.Location = new System.Drawing.Point(161, 19);
+            this.radioButtonCupcakeSaborVainilla.Name = "radioButtonCupcakeVainilla";
+            this.radioButtonCupcakeSaborVainilla.Size = new System.Drawing.Size(66, 66);
+            this.radioButtonCupcakeSaborVainilla.TabIndex = 30;
+            this.radioButtonCupcakeSaborVainilla.UseVisualStyleBackColor = true;
             // 
             // label24
             // 
@@ -1397,14 +1397,14 @@
             // 
             // radioButtonCupcakeTresLeches
             // 
-            this.radioButtonCupcakeTresLeches.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioButtonCupcakeTresLeches.AutoSize = true;
-            this.radioButtonCupcakeTresLeches.Image = ((System.Drawing.Image)(resources.GetObject("radioButtonCupcakeTresLeches.Image")));
-            this.radioButtonCupcakeTresLeches.Location = new System.Drawing.Point(329, 19);
-            this.radioButtonCupcakeTresLeches.Name = "radioButtonCupcakeTresLeches";
-            this.radioButtonCupcakeTresLeches.Size = new System.Drawing.Size(66, 66);
-            this.radioButtonCupcakeTresLeches.TabIndex = 31;
-            this.radioButtonCupcakeTresLeches.UseVisualStyleBackColor = true;
+            this.radioButtonCupcakeSaborTresLeches.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButtonCupcakeSaborTresLeches.AutoSize = true;
+            this.radioButtonCupcakeSaborTresLeches.Image = ((System.Drawing.Image)(resources.GetObject("radioButtonCupcakeTresLeches.Image")));
+            this.radioButtonCupcakeSaborTresLeches.Location = new System.Drawing.Point(329, 19);
+            this.radioButtonCupcakeSaborTresLeches.Name = "radioButtonCupcakeTresLeches";
+            this.radioButtonCupcakeSaborTresLeches.Size = new System.Drawing.Size(66, 66);
+            this.radioButtonCupcakeSaborTresLeches.TabIndex = 31;
+            this.radioButtonCupcakeSaborTresLeches.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
@@ -1611,7 +1611,7 @@
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.RadioButton radioButtonSaborVainilla;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.RadioButton radioButtonSabor3leches;
+        private System.Windows.Forms.RadioButton radioButtonSaborTresLeches;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.TabControl tabControl;
         public System.Windows.Forms.TabPage tabPasteles;
@@ -1622,15 +1622,15 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label17;
-        public System.Windows.Forms.RadioButton radioButtonCupcakeChocolate;
+        public System.Windows.Forms.RadioButton radioButtonCupcakeSaborChocolate;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.RadioButton radioButtonCupcakeVainilla;
+        private System.Windows.Forms.RadioButton radioButtonCupcakeSaborVainilla;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.RadioButton radioButtonCupcakeTresLeches;
+        private System.Windows.Forms.RadioButton radioButtonCupcakeSaborTresLeches;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.RadioButton radioButtonCupcakeMediano;
-        private System.Windows.Forms.RadioButton radioButtonCupcakeMini;
-        private System.Windows.Forms.RadioButton radioButtonCupcakeJumbo;
+        private System.Windows.Forms.RadioButton radioButtonCupcakeTamañoMediano;
+        private System.Windows.Forms.RadioButton radioButtonCupcakeTamañoMini;
+        private System.Windows.Forms.RadioButton radioButtonCupcakeTamañoJumbo;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label34;

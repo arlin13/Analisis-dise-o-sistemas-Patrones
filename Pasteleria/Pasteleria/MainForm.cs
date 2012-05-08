@@ -14,8 +14,7 @@ namespace Pasteleria
         List<string> listaProducto = new List<string>();
         Logica logica = new Logica();
         LoginForm login = new LoginForm();
-        Empleado emp;
-        
+
         public MainForm()
         {
             InitializeComponent();
@@ -26,7 +25,6 @@ namespace Pasteleria
         //Ventana
         private void cerrarSesiónToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            LoginForm login = new LoginForm();
             login.Show();
             Hide();
         }
@@ -42,14 +40,12 @@ namespace Pasteleria
             VentasTotales ventastotales = new VentasTotales();
             ventastotales.Show();
         }
-
         //Acerca de
         private void verAyudaToolStripMenuItem_Click(object sender, EventArgs e)
-        {       
+        {
             AcercaDe ayuda = new AcercaDe();
             ayuda.Show();
         }
-
         #endregion Menu
 
         #region Eventos radiobuttons [Pasteles]
@@ -101,10 +97,9 @@ namespace Pasteleria
             else
                 textBoxPastelExtrasDibujo.Enabled = true;
         }
-        #endregion 
+        #endregion
 
         #region Botón Agregar [Pasteles]
-       
         private void buttonAgregar_Click(object sender, EventArgs e)
         {
             Pastel pastel;
@@ -113,35 +108,35 @@ namespace Pasteleria
                 pastel = new PastelChico();
             else if (radioButtonTamañoMediano.Checked)
                 pastel = new PastelMediano();
-            else
+            else if (radioButtonTamañoGrande.Checked)
                 pastel = new PastelGrande();
+            else
+                throw new Exception("Error al escoger tamaño del pastel");
 
             if (radioButtonSaborChocolate.Checked)
                 pastel.Sabor = Sabor.Chocolate;
             else if (radioButtonSaborVainilla.Checked)
                 pastel.Sabor = Sabor.Vainilla;
-            else
+            else if (radioButtonSaborTresLeches.Checked)
                 pastel.Sabor = Sabor.TresLeches;
+            else
+                throw new Exception("Error al escoger sabor del pastel");
 
             if (radioButtonFormaCircular.Checked)
                 pastel.Forma = Forma.Circular;
             else if (radioButtonFormaCorazon.Checked)
                 pastel.Forma = Forma.Corazon;
-            else
+            else if (radioButtonFormaCuadrado.Checked)
                 pastel.Forma = Forma.Cuadrado;
+            else
+                throw new Exception("Error al escoger forma del pastel");
 
             if (checkBoxExtrasFruta.Checked)
-            {
                 pastel = new Fruta(pastel);
-            }
             if (checkBoxExtrasNieve.Checked)
-            {
                 pastel = new Nieve(pastel);
-            }
             if (checkBoxExtrasRelleno.Checked)
-            {
                 pastel = new Relleno(pastel);
-            }
 
             listaProducto.Add(pastel.CalculaPrecio() + "\t" + pastel.Sabor + "\t" + pastel.Forma + "\t\t" + pastel.ObtieneDescripcion());
             lbCompraRealizada.DataSource = null;
@@ -149,7 +144,7 @@ namespace Pasteleria
 
             listaCostoProducto.Add(pastel.CalculaPrecio());
             double total = 0.00;
-           
+
             foreach (var item in listaCostoProducto)
             {
                 total += item;
@@ -195,7 +190,7 @@ namespace Pasteleria
                 comboBoxExtrasSprinkles.Enabled = false;
                 comboBoxExtrasSprinkles.SelectedIndex = -1;
             }
-            else 
+            else
             {
                 comboBoxExtrasSprinkles.Enabled = true;
                 comboBoxExtrasSprinkles.SelectedIndex = 0;
@@ -208,34 +203,32 @@ namespace Pasteleria
         {
             Cupcake cupcake;
 
-            if (radioButtonCupcakeMini.Checked)
+            if (radioButtonCupcakeTamañoMini.Checked)
                 cupcake = new CupcakeMini();
-            else if (radioButtonCupcakeMediano.Checked)
+            else if (radioButtonCupcakeTamañoMediano.Checked)
                 cupcake = new CupcakeMediano();
-            else
+            else if (radioButtonCupcakeTamañoJumbo.Checked)
                 cupcake = new CupcakeJumbo();
+            else
+                throw new Exception("Error al escoger tmaño del cupcake");
 
-            if (radioButtonCupcakeChocolate.Checked)
-            cupcake.SaborCupcake = SaborCupcake.Chocolate;
-            else if(radioButtonCupcakeVainilla.Checked)
-                cupcake.SaborCupcake = SaborCupcake.Vainilla;
-            else 
-                cupcake.SaborCupcake = SaborCupcake.TresLeches;
+            if (radioButtonCupcakeSaborChocolate.Checked)
+                cupcake.Sabor = Sabor.Chocolate;
+            else if (radioButtonCupcakeSaborVainilla.Checked)
+                cupcake.Sabor = Sabor.Vainilla;
+            else if (radioButtonCupcakeSaborTresLeches.Checked)
+                cupcake.Sabor = Sabor.TresLeches;
+            else
+                throw new Exception("Error al escoger tmaño del cupcake");
 
-            if (checkBoxExtrasCases.Checked) 
-            {
+            if (checkBoxExtrasCases.Checked)
                 cupcake = new Cases(cupcake);
-            }
             if (checkBoxExtrasFrosting.Checked)
-            {
-                cupcake = new Frosting (cupcake);
-            }
+                cupcake = new Frosting(cupcake);
             if (checkBoxExtrasSprinkles.Checked)
-            {
-                cupcake = new Sprinkles (cupcake);
-            }
+                cupcake = new Sprinkles(cupcake);
 
-            listaProducto.Add(cupcake.CalculaPrecio() + "\t" + cupcake.SaborCupcake + "\t-----\t\t" + cupcake.ObtieneDescripcion());
+            listaProducto.Add(cupcake.CalculaPrecio() + "\t" + cupcake.Sabor + "\t-----\t\t" + cupcake.ObtieneDescripcion());
             lbCompraRealizada.DataSource = null;
             lbCompraRealizada.DataSource = listaProducto;
 
@@ -250,7 +243,7 @@ namespace Pasteleria
             textBoxTotal.Text = total.ToString();
         }
         #endregion
-       
+
         #region Pagar
         private void buttonPagar_Click(object sender, EventArgs e)
         {
@@ -261,10 +254,10 @@ namespace Pasteleria
             {
                 MessageBox.Show("No ha agregado artículos a la lista de compra.");
             }
-            
+
             else
             {
-                try 
+                try
                 {
                     double total = double.Parse(textBoxTotal.Text);
 
@@ -278,19 +271,19 @@ namespace Pasteleria
                     {
                         context = new Context(new Cupon());
                         string descuento = "5";
-                        double descuentoCupon = .05;                       
+                        double descuentoCupon = .05;
                         string tarjeta = null;
 
                         if (radioButtonCupon10.Checked)
                         {
-                             descuento = "10";
-                             descuentoCupon = .10;
+                            descuento = "10";
+                            descuentoCupon = .10;
                         }
 
                         else if (radioButtonCupon15.Checked)
                         {
-                             descuento = "15";
-                             descuentoCupon = .15;
+                            descuento = "15";
+                            descuentoCupon = .15;
                         }
 
                         if (radioButtonMasterCard.Checked)
@@ -311,17 +304,17 @@ namespace Pasteleria
 
                         logica.CapturarVenta(ven);
 
-                       string recibo = "\t\t\tREPOSTERÍA\n\tequiporeposteria@gmail.com\nTIJUANA BAJA CALIFORNIA C.P 22500" +
-                                        "\n--------------------------------------\nEmpleado: " +
-                                        LoginForm.empleado.Nombre + "\nID: " +
-                                        LoginForm.empleado.idEmpleado +
-                                        "\n--------------------------------------\nRecibo de cliente\n" +
-                                        tarjeta + "\n\nSUBTOTAL:\t\t\t\t\t$\t" +
-                                        textBoxTotal.Text + "\nDESCUENTO:\t\t\t" + descuento + "%\t\t$\t-" +
-                                        (descuentoCupon * Convert.ToDouble(textBoxTotal.Text)) +
-                                        "\nTOTAL:\t\t\t\t\t\t$\t" + context.ContextInterface(total, descuentoCupon) +
-                                        "\n--------------------------------------\n\t\tGracias por su compra!\n\t   " +
-                                        fechaRecibo;
+                        string recibo = "\t\t\tREPOSTERÍA\n\tequiporeposteria@gmail.com\nTIJUANA BAJA CALIFORNIA C.P 22500" +
+                                         "\n--------------------------------------\nEmpleado: " +
+                                         LoginForm.empleado.Nombre + "\nID: " +
+                                         LoginForm.empleado.idEmpleado +
+                                         "\n--------------------------------------\nRecibo de cliente\n" +
+                                         tarjeta + "\n\nSUBTOTAL:\t\t\t\t\t$\t" +
+                                         textBoxTotal.Text + "\nDESCUENTO:\t\t\t" + descuento + "%\t\t$\t-" +
+                                         (descuentoCupon * Convert.ToDouble(textBoxTotal.Text)) +
+                                         "\nTOTAL:\t\t\t\t\t\t$\t" + context.ContextInterface(total, descuentoCupon) +
+                                         "\n--------------------------------------\n\t\tGracias por su compra!\n\t   " +
+                                         fechaRecibo;
 
                         File.WriteAllText("Recibo.txt", recibo);
                     }
@@ -329,14 +322,14 @@ namespace Pasteleria
                     Process.Start("Recibo.txt");
                 }
 
-                catch(Exception exc)
+                catch (Exception exc)
                 {
-                     string debug = exc.Message;
-                }               
+                    string debug = exc.Message;
+                }
             }
 
-        }                
-        #endregion 
+        }
+        #endregion
 
         #region Lista de Compras
         private void lbCompraRealizada_DoubleClick(object sender, EventArgs e)
@@ -359,10 +352,9 @@ namespace Pasteleria
         #endregion
 
         private void MainForm_Load(object sender, EventArgs e)
-        {      
-            emp = LoginForm.empleado;
-            labelIdEmpleado.Text = emp.idEmpleado.ToString();
-            labelEmpleado.Text = emp.Nombre;
+        {
+            labelIdEmpleado.Text = LoginForm.empleado.idEmpleado.ToString();
+            labelEmpleado.Text = LoginForm.empleado.Nombre + " " + LoginForm.empleado.Apellido;
         }
 
     }
