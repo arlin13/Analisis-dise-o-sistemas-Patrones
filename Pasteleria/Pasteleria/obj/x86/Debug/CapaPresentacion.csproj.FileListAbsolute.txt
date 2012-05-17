@@ -180,3 +180,8 @@ C:\Users\OLGA\Desktop\Analisis-dise-o-sistemas-Patrones\Pasteleria\Pasteleria\ob
 C:\Users\OLGA\Desktop\Analisis-dise-o-sistemas-Patrones\Pasteleria\Pasteleria\obj\x86\Debug\GenerateResource.write.3224.tlog
 C:\Users\OLGA\Desktop\Analisis-dise-o-sistemas-Patrones\Pasteleria\Pasteleria\obj\x86\Debug\GenerateResource.write.3442.tlog
 C:\Users\OLGA\Desktop\Analisis-dise-o-sistemas-Patrones\Pasteleria\Pasteleria\obj\x86\Debug\GenerateResource.write.3444.tlog
+C:\Users\OLGA\Dropbox\CETYS\6o\Análisis y diseño de sistemas de información\Analisis-dise-o-sistemas-Patrones\Pasteleria\Pasteleria\bin\Debug\Pasteleria.exe.config
+C:\Users\OLGA\Dropbox\CETYS\6o\Análisis y diseño de sistemas de información\Analisis-dise-o-sistemas-Patrones\Pasteleria\Pasteleria\obj\x86\Debug\Interop.Microsoft.Office.Interop.Excel.dll
+C:\Users\OLGA\Dropbox\CETYS\6o\Análisis y diseño de sistemas de información\Analisis-dise-o-sistemas-Patrones\Pasteleria\Pasteleria\obj\x86\Debug\CapaPresentacion.csproj.ResolveComReference.cache
+C:\Users\OLGA\Dropbox\CETYS\6o\Análisis y diseño de sistemas de información\Analisis-dise-o-sistemas-Patrones\Pasteleria\Pasteleria\obj\x86\Debug\Pasteleria.exe
+C:\Users\OLGA\Dropbox\CETYS\6o\Análisis y diseño de sistemas de información\Analisis-dise-o-sistemas-Patrones\Pasteleria\Pasteleria\obj\x86\Debug\Pasteleria.pdb

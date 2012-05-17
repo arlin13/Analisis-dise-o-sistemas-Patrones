@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Correo\ConcreteStrategy\CorreoNuevaCuenta.cs" />
+    <Compile Include="Correo\ConcreteStrategy\CorreoRecordarContraseña.cs" />
+    <Compile Include="Correo\Context\CorreoContext.cs" />
     <Compile Include="Cupcakes\Component\Cupcake.cs" />
     <Compile Include="Cupcakes\ConcreteComponent\CupcakeJumbo.cs" />
     <Compile Include="Cupcakes\ConcreteComponent\CupcakeMediano.cs" />
@@ -58,7 +61,7 @@
     <Compile Include="Menu\AcercaDe.Designer.cs">
       <DependentUpon>AcercaDe.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login\Correo.cs" />
+    <Compile Include="Correo\Strategy\CorreoStrategy.cs" />
     <Compile Include="FormaDePago\ConcreteStrategy\Cupon.cs" />
     <Compile Include="FormaDePago\ConcreteStrategy\TarjetaClienteDistinguido.cs" />
     <Compile Include="FormaDePago\Context\Context.cs" />
@@ -150,6 +153,7 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="ClassDiagram2.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -300,6 +304,7 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

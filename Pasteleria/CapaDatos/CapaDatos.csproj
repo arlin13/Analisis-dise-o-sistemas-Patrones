@@ -43,7 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseDatos.cs" />
+    <Compile Include="BaseDeDatos.cs" />
+    <Compile Include="BaseDeDatosContraseña.cs" />
+    <Compile Include="BaseDeDatosEmpleado.cs" />
+    <Compile Include="BaseDeDatosLogin.cs" />
+    <Compile Include="BaseDeDatosVenta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

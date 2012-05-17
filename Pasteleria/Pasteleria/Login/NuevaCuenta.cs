@@ -38,19 +38,20 @@ namespace Pasteleria
                     string debug = exc.Message;
                 }
 
-                Correo correoCuenta = new Correo();
-                string Aviso;
-                string Mensaje = "Tu Nueva Cuenta\n\nGracias por haber creado una cuenta en Reposteria."
-                    + "Aquí puedes encontrar información de tu cuenta:"
-                    + "\n\nID: " + logica.ObtenerEmpleadoID(txtCorreo.Text)
-                    + "\nUsuario: " + txtUsuario.Text
-                    + "\nCorreo: " + txtCorreo.Text
-                    + "\n\nGuarda esta información para uso futuro.\n\nGracias,"
-                    + "\nEl equipo de Repostería\nContáctanos en equiporeposteria@gmail.com";
+                CorreoContext correo = new CorreoContext(new CorreoNuevaCuenta());
+                correo.CorreoContextInterface(txtCorreo.Text);
 
-                Aviso = correoCuenta.MandarCorreo(txtCorreo.Text, "Nueva Cuenta", Mensaje);
+                //string Mensaje = "Tu Nueva Cuenta\n\nGracias por haber creado una cuenta en Reposteria."
+                //    + "Aquí puedes encontrar información de tu cuenta:"
+                //    + "\n\nID: " + logica.ObtenerEmpleadoID(txtCorreo.Text)
+                //    + "\nUsuario: " + txtUsuario.Text
+                //    + "\nCorreo: " + txtCorreo.Text
+                //    + "\n\nGuarda esta información para uso futuro.\n\nGracias,"
+                //    + "\nEl equipo de Repostería\nContáctanos en equiporeposteria@gmail.com";
 
-                MessageBox.Show(Aviso);
+                //Aviso = correoCuenta.MandarCorreo(txtCorreo.Text, "Nueva Cuenta", Mensaje);
+
+                //MessageBox.Show(Aviso);
                 Hide();
             }
 

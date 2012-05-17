@@ -6,13 +6,11 @@ Empleado: Alfredo
 ID: 1
 --------------------------------------
 Recibo de cliente
-VISA 
-Número de cuenta: 
-4552 7204 1234 5678
 
-SUBTOTAL:					$	270
-DESCUENTO:			5%		$	-13.5
-TOTAL:						$	256
+
+SUBTOTAL:					$	200
+DESCUENTO:			5%		$	-10
+TOTAL:						$	190
 --------------------------------------
 		Gracias por su compra!
-	   04/05/2012 04:40:44 p.m.
+	   11/05/2012 01:04:32 p.m.

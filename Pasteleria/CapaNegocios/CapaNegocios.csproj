@@ -42,7 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Logica.cs" />
+    <Compile Include="LogicaDeEmpleado.cs" />
+    <Compile Include="LogicaDeLogin.cs" />
+    <Compile Include="LogicaDeVenta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

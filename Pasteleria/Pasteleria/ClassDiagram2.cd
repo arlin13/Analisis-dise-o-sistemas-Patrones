@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Pasteleria.CorreoNuevaCuenta">
+    <Position X="26.25" Y="11.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAACAQAAAAAAAAAA=</HashCode>
+      <FileName>Correo\ConcreteStrategy\CorreoNuevaCuenta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.CorreoRecordarContraseña">
+    <Position X="28.75" Y="11.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAACAQAAAAAAAAAA=</HashCode>
+      <FileName>Correo\ConcreteStrategy\CorreoRecordarContraseña.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.CorreoContext">
+    <Position X="31.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Correo\Context\CorreoContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.CorreoStrategy">
+    <Position X="27.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Correo\Strategy\CorreoStrategy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.Cupcake">
+    <Position X="6.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAgAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cupcakes\Component\Cupcake.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pasteleria.CupcakeJumbo">
+    <Position X="8.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cupcakes\ConcreteComponent\CupcakeJumbo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.CupcakeMediano">
+    <Position X="11" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cupcakes\ConcreteComponent\CupcakeMediano.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.CupcakeMini">
+    <Position X="6.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cupcakes\ConcreteComponent\CupcakeMini.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.Cases">
+    <Position X="2.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cupcakes\ConcreteDecorators\Cases.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.Frosting">
+    <Position X="4.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cupcakes\ConcreteDecorators\Frosting.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.Sprinkles">
+    <Position X="6.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cupcakes\ConcreteDecorators\Sprinkles.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.CupcakeDecorator">
+    <Position X="4.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAABAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Cupcakes\Decorator\CupcakeDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.Cupon">
+    <Position X="20.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FormaDePago\ConcreteStrategy\Cupon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.TarjetaClienteDistinguido">
+    <Position X="22.5" Y="11.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FormaDePago\ConcreteStrategy\TarjetaClienteDistinguido.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.Context" Collapsed="true">
+    <Position X="27" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>FormaDePago\Context\Context.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.FormaDePago">
+    <Position X="21.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FormaDePago\Strategy\FormaDePago.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.LoginForm" Collapsed="true">
+    <Position X="23.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAoCAAQBAZAICAAAACAgAABBAAAAAAAAEgAAA=</HashCode>
+      <FileName>Login\LoginForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.NuevaCuenta" Collapsed="true">
+    <Position X="28.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAHAAABAAAACAAAICAiAQAFAAACCAAQAgAAA=</HashCode>
+      <FileName>Login\NuevaCuenta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.RecordarContraseña" Collapsed="true">
+    <Position X="25.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAAACgAIACAAAAAAAAACAQAAFgAAA=</HashCode>
+      <FileName>Login\RecordarContraseña.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.MainForm" Collapsed="true">
+    <Position X="25.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/wQIQVXAIbakJhAEAKGgEQAyawLINCqiCqhEAM2lMjQ=</HashCode>
+      <FileName>MainForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.AcercaDe" Collapsed="true">
+    <Position X="23.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAAACAAAACAAAAAAAIAAAAAAEAAAA=</HashCode>
+      <FileName>Menu\AcercaDe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.Mantenimiento" Collapsed="true">
+    <Position X="27" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIIBAAAGIAABAgAACAAAACkCCAAFAAECAAABAiJIA=</HashCode>
+      <FileName>Menu\Mantenimiento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.VentasTotales" Collapsed="true">
+    <Position X="25.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACCAASAGCAACBBCAISAAAACADAGAAAFASAAEIApAAA=</HashCode>
+      <FileName>Menu\VentasTotales.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.Pastel">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAgAAAAAAAAAAAAAABAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pasteles\Component\Pastel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pasteleria.PastelChico">
+    <Position X="5.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pasteles\ConcreteComponent\PastelChico.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.PastelGrande">
+    <Position X="1" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pasteles\ConcreteComponent\PastelGrande.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.PastelMediano">
+    <Position X="3.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pasteles\ConcreteComponent\PastelMediano.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.Dibujo">
+    <Position X="8" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pasteles\ConcreteDecorators\Dibujo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.Fruta">
+    <Position X="10.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pasteles\ConcreteDecorators\Fruta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.Nieve">
+    <Position X="12.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pasteles\ConcreteDecorators\Nieve.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.Relleno">
+    <Position X="14.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pasteles\ConcreteDecorators\Relleno.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.PastelDecorator">
+    <Position X="11.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAABQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pasteles\Decorator\PastelDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.Program" Collapsed="true">
+    <Position X="30.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.ReposteriaDataSet" Collapsed="true">
+    <Position X="27" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABBIAxAAABJABAIAQAABAAgCRBggAAAAAIEABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.Properties.Resources" Collapsed="true">
+    <Position X="28.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACCwAQAAAJAAACDAMAAhEAAICQAAAAAIAFAADAAAAck=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.Properties.Settings" Collapsed="true">
+    <Position X="30.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.ReposteriaDataSetTableAdapters.EmpleadoTableAdapter" Collapsed="true">
+    <Position X="30.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.ReposteriaDataSetTableAdapters.VentaTableAdapter" Collapsed="true">
+    <Position X="27" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.ReposteriaDataSetTableAdapters.BuscarEmpleadoTableAdapter" Collapsed="true">
+    <Position X="25.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.ReposteriaDataSetTableAdapters.QueriesTableAdapter" Collapsed="true">
+    <Position X="23.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAACAAAAAAMQAAIAAAAAAAACAIAAAAAABAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pasteleria.ReposteriaDataSetTableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="23.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAACAIAABABAEDAAIAMAAgAAACgACAAAQAAAAABAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Pasteleria.IArticulo">
+    <Position X="23.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAgAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IArticulo.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Pasteleria.Sabor">
+    <Position X="25.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAgAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IArticulo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Pasteleria.Forma">
+    <Position X="23.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAo=</HashCode>
+      <FileName>Pasteles\Component\Pastel.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
